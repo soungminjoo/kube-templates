@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-${app-label}
+  name: deployment-${appLabel}
 spec:
   replicas: ${replicas}
   selector:
     matchLabels:
-      app: ${app-label}
+      app: ${appLabel}
   template:
     metadata:
-      name: ${app-label}
+      name: ${appLabel}
       labels:
-        app: ${app-label}
+        app: ${appLabel}
     spec:
       containers:
-        - image: ${docker-image}
-          name: container-1st
+        - image: ${dockerImage}
+          name: container_1
