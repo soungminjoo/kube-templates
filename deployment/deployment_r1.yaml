@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - image: ${dockerImage}
-          name: container_1
+          name: container-default
