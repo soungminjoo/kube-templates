@@ -16,3 +16,5 @@ spec:
       containers:
         - image: ${dockerImage}
           name: container-default
+          ports:
+            - containerPort: ${containerPort}
