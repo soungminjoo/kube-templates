@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ${podName}
+spec:
+  containers:
+    - image: ${dockerImage}
+      name: container_1
+      ports:
+        - containerPort: ${containerPort}
+          protocol: TCP
